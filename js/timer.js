@@ -20,8 +20,11 @@ function setReleaseDate(){
 
 var releaseDate = setReleaseDate();
 
-/* The code snippet is using the `setInterval()` function to repeatedly execute a function every 1000
-milliseconds (1 second). It calculates days, hours, minutes and seconds until the releaseDate.*/
+/**
+* The code snippet is using the `setInterval()` function to repeatedly execute a function every 1000
+* milliseconds (1 second). It calculates days, hours, minutes and seconds until the releaseDate.
+* If the the release date is arrived it sets the release date to the next Christmas Eve.
+*/
 var timerFunc = setInterval(function(){
 	var diff = releaseDate - new Date().getTime();
 	var d = Math.floor(diff / 86400000);
