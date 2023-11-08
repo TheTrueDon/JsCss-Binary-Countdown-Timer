@@ -1,0 +1,146 @@
+
+body {
+	text-align: center;
+	background: black;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.timerTree {
+    padding: 2px;
+	background: darkgreen;
+	background: radial-gradient(circle, darkgreen 0%, black 100%);
+	display: grid;
+	grid-template-columns: repeat(15, 2.9vh);
+	grid-template-rows: repeat(26, 2.9vh);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	border: 20px groove saddlebrown;
+	border-radius: 5px;
+}
+
+.pixel {
+	border-radius: 50%;
+}
+
+.yellowPx {
+	background: yellow;
+}
+
+.starPx {
+    background-color: yellow;
+    animation: star 3s ease-in-out infinite;
+}
+
+
+  @keyframes star {
+    100% {
+      transform: scale(.5);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    0% {
+        transform: scale(.5);
+    }
+  }
+
+.greenPx {
+	background: darkgreen;
+	transition: background 500ms, border-radius 500ms;
+}
+
+.bluePx {
+	background: lightblue;
+}
+
+.brownPx {
+	background: saddlebrown;
+}
+
+.redPx {
+	background: red;
+	transition: background 500ms, border-radius 500ms;
+}
+
+h1 {
+	font-family: Brush Script MT, cursive;
+    color: gold;
+}
+
+
+
+/*
+*   Hier folgt jetzt nur CSS das für die Website interessant ist aber nicht relevant für den Timer
+*/
+
+
+.tabs figure { 
+    display: block; 
+    margin-left: 0; 
+    border-bottom: 1px solid black;
+    clear: both;
+ }
+ 
+ .tabs > input,
+ .tabs figure > div { 
+    display: none; 
+}
+ 
+ .tabs figure>div {
+   padding: 20px;
+   width: 100%;
+   background: black;
+   line-height: 1.5em;
+   letter-spacing: 0.3px;
+   color: #e0e0e0;
+ }
+
+#timerTab:checked ~ figure .timerTab,
+#explainTab:checked ~ figure .explainTab { 
+    display: block; 
+}
+
+nav label {
+    float: left;
+    padding: 15px 15px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    background: black;
+    color: #e0e0e0;
+ }
+ 
+ nav label:nth-child(1) { 
+    border-left: 1px solid black; 
+}
+ nav label:hover { 
+    background: DimGray; 
+}
+ nav label:active { 
+    background: #e0e0e0; 
+}
+ 
+ #timerTab:checked ~ nav label[for="timerTab"],
+ #explainTab:checked ~ nav label[for="explainTab"] {
+   background: black;
+   color: #e0e0e0;
+   position: relative;
+   border-bottom: none;
+ }
+ 
+ #timerTab:checked ~ nav label[for="timerTab"]:after,
+ #explainTab:checked ~ nav label[for="explainTab"]:after {
+   content: "";
+   display: block;
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   background: #e0e0e0;
+   left: 0;
+   bottom: -1px;
+ }

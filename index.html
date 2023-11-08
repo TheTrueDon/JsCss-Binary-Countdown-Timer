@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width = device-width, initial-scale = 1.0" />  
+	
+    <!--Hier folgt die Einbindung von Stylesheet und JS für den Timer.-->
+    <link rel="stylesheet" href="css/timer.css">
+	<script type="text/javascript" src="js/timer.js"></script>
+	<script type="text/javascript" src="js/timerFace.js"></script>
+</head>
+
+<body>
+    <div class="tabs">
+        <input checked="checked" id="timerTab" type="radio" name="tabs" />
+        <input id="explainTab" type="radio" name="tabs" />
+     
+        <nav>
+           <label for="timerTab">Timer</label>
+           <label for="explainTab">Erklärung</label>
+        </nav>
+        
+        <figure>
+            <div class="timerTab" id="tabContent1"> 
+	            <h1>Einen fröhlichen Geekolaus</h1>
+
+                <!--Hier folgt die Anweisung um den Timer einzubinden.-->
+	            <script>initTimerGrid(document.getElementById("tabContent1"));</script>
+            </div>
+            <div class="explainTab">
+                <h1>Wie liest du diesen Timer?</h1>
+                <p>Was du hier siehst ist ein Countdown bis Heiligabend.</p>
+                <p>
+                    Um ihn zu verstehen musst du zunächst die Binäre Darstellung von Zahlen verstehen. 
+                    Der Weihnachstbaum ist nämlich nicht nur ein Baum, 
+                    denn sein baumschmuck zeigt dir die Tage, Stunden, Minuten und Sekunden bis Heiligabend.
+                </p>
+                <p>
+                    Dafür siehst du dir die roten Weihnachtsbaumkugeln an.
+                    Die erste Reihe (beginnend vom Rechten Baumrand) zeigt dir die Tage, die zweite die Stunden usw.
+                    in Binärdarstellung an. Das ist auch der grund weshalb die Kugeln sich immer ändern.
+                </p>
+            </div>
+        </figure>
+     </div>
+
+
+</body>
+</html>
