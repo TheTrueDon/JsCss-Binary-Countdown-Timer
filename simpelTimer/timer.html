@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width = device-width, initial-scale = 1.0" />  
+	<link rel="stylesheet" href="timer.css">
+	
+	<script>
+		var releaseDateShow = new Date("Jan 21, 2024 00:00:00");
+		document.title = "Timer bis zum " + releaseDateShow.toLocaleDateString("de-DE");
+		var releaseDate = releaseDateShow.getTime();
+	</script>
+	<script type="text/javascript" src="timerFace.js"></script>
+	<script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body>
+	<script>initTimerGrid(document.body);</script>
+</body>
+</html>
