@@ -18,6 +18,8 @@ There are four rows of red ornaments. Every circle in the row represents a bit (
 on the right hand border of the tree. the lowest row represents seconds, the row above minutes, above hours and above days till Christmas Eve.
 If you add them you get the left time until Christmas Eve, or whatever point in time you define in your implementation.
 
+![Screenshot of the timer with notes how to read](screenshot.png)
+
 ## Files and usage
 
 The JS is split in timer.js for the functionality of the timer interval and the timerFace.js for any visualization of the timer.
