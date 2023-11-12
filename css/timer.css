@@ -12,9 +12,8 @@ body {
 }
 
 .timerTree {
-    padding: 2px;
-	background: darkgreen;
-	background: radial-gradient(circle, darkgreen 0%, black 100%);
+  padding: 2px;
+	background: radial-gradient(circle, rgb(0, 77, 0) 0%, black 100%);
 	display: grid;
 	grid-template-columns: repeat(15, 2.9vh);
 	grid-template-rows: repeat(26, 2.9vh);
@@ -36,7 +35,6 @@ body {
     background-color: yellow;
     animation: star 3s ease-in-out infinite;
 }
-
 
   @keyframes star {
     100% {
@@ -72,8 +70,6 @@ h1 {
 	font-family: Brush Script MT, cursive;
     color: gold;
 }
-
-
 
 /*
 *   Hier folgt jetzt nur CSS das für die Website interessant ist aber nicht relevant für den Timer
