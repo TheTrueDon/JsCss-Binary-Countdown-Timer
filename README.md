@@ -10,11 +10,15 @@ The project is a part of a challenge by [Codespere](https://codesphere.com/) and
 There are two versions of the timer. The main version is the Christmas Eve countdown, visualized as a Christmas tree.
 The second one is a [simplified version](https://github.com/TheTrueDon/JsCss-Binary-Countdown-Timer/tree/main/simpelTimer) that is a nearly plain looking timer with pretty much basic functionality and design for quick and easy modification.
 
+## Usecase
+
+You are a nerd / geek / tech dude? You like Christmas? Normal countdown timers are to less challenging to read? This is the weird Christmas countdown you will need! Use it as Wallpaper, as Screensaver or inside a digital picture frame to earn some questioning looks of your decimal preloaded friends.
+
 ## How to read the timer
 
 The timer is presented as a pixelart Christmas tree, with ornaments. The red ornaments are special because they change constantly.
 
-There are four rows of red ornaments. Every circle in the row represents a bit (red equals 1, green equals 0) and the binary numers are alsways starting
+There are four rows of red ornaments. Every circle in the row represents a bit (red equals 1, green equals 0) and the binary numers are always starting
 on the right hand border of the tree. the lowest row represents seconds, the row above minutes, above hours and above days till Christmas Eve.
 If you add them you get the left time until Christmas Eve, or whatever point in time you define in your implementation.
 
