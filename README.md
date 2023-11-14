@@ -12,7 +12,7 @@ The second one is a [simplified version](https://github.com/TheTrueDon/JsCss-Bin
 
 ## Usecase
 
-You are a nerd / geek / tech dude? You like Christmas? Normal countdown timers are to less challenging to read? This is the weird Christmas countdown you will need! Use it as Wallpaper, as Screensaver or inside a digital picture frame to earn some questioning looks of your decimal preloaded friends.
+You are a nerd / geek / tech dude? You like Christmas? Normal countdown timers are too less challenging to read? This is the weird Christmas countdown you will need! Use it as Wallpaper, as Screensaver or inside a digital picture frame to earn some questioning looks of your decimal preloaded friends.
 
 ## How to read the timer
 
