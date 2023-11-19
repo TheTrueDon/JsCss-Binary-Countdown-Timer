@@ -74,9 +74,11 @@ const treePixels = [
 		var treeWidth = map[1];
 		var bin = (num >>> 0).toString(2).padStart(treeWidth, "0");
 		var offset = (treePixels[0].length-treeWidth)/2;
-		for(let i = bin-1; i >= 0; i--){
+		
+		for(let i = bin.length-1; i >= 0; i--){
 			var pos = offset+i;
 			var digit = document.getElementById(mappedRow + "-" + pos);
+
 			if (bin[i] == "0"){
 				digit.classList.remove("redPx");
 				digit.classList.add("greenPx");
